@@ -1,0 +1,20 @@
+[project]
+name = "mti-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dboyarov", email = "dboyarov@rvision.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp>=1.0.0",
+    "mti-api @ git+https://github.com/derived-functor/mti-api.git",
+]
+
+[project.scripts]
+mti-mcp = "mti_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
